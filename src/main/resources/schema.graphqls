@@ -1,0 +1,25 @@
+schema {
+	query: Query
+	mutation: Mutation
+}
+
+type Query {
+	findAllPessoas: [Pessoa]
+}
+
+type Mutation {
+	savePessoa(novo: PessoaInput): Pessoa
+}
+
+type Pessoa {
+	id: ID!
+	nome: String!
+	cpf: String!
+	email: String!
+}
+
+input PessoaInput{
+	nome: String!
+	cpf: String!
+	email: String!
+}
