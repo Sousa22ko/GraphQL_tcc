@@ -5,6 +5,7 @@ schema {
 
 type Query {
 	findAllPessoas: [Pessoa]
+	findPessoaById(id: Int!): Pessoa
 }
 
 type Mutation {
@@ -16,6 +17,7 @@ type Pessoa {
 	nome: String!
 	cpf: String!
 	email: String!
+	dataNascimento: Date
 }
 
 input PessoaInput{
@@ -23,3 +25,5 @@ input PessoaInput{
 	cpf: String!
 	email: String!
 }
+
+scalar Date

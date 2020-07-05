@@ -9,8 +9,7 @@ import com.example.GraphQLRProject.model.input.PessoaInput;
 @Component
 public class Mutation implements GraphQLMutationResolver{
 	
-	Pessoa savePessoa(PessoaInput obj) {
+	public Pessoa savePessoa(PessoaInput obj) {
 		return new Pessoa("teste", "123.654.789-88", "email@wqeqweq.teste");
 	}
-
 }

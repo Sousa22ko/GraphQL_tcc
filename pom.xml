@@ -21,6 +21,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- Spring dependency -->
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -40,15 +41,11 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>	
+		<!-- Spring dependency -->
 	
-		<!-- 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>	 
-		-->
 
 	
+		<!-- GraphQL dependency -->
         <!-- 
         <dependency>
             <groupId>com.graphql-java-kickstart</groupId>
@@ -56,6 +53,11 @@
             <version>6.0.1</version>
         </dependency>
          -->
+         <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-spring-boot-starter</artifactId>
+            <version>5.0.2</version>
+        </dependency>
         <dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-java-tools</artifactId>
@@ -79,7 +81,10 @@
 			<artifactId>graphiql-spring-boot-starter</artifactId>
 			<version>5.0.2</version>
 		</dependency>
+		<!-- Dev Only -->
+		<!-- GraphQL dependency -->
 		
+		<!-- Other dependency -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -99,7 +104,6 @@
 		    <groupId>javax.validation</groupId>
 		    <artifactId>validation-api</artifactId>
 	    </dependency>			
-		<!-- GraphQL end -->	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -111,6 +115,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!-- Other dependency -->
 	</dependencies>
 
 	<build>
