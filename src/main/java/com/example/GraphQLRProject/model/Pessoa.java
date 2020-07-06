@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import com.example.GraphQLRProject.core.GenericEntity;
+import com.example.GraphQLRProject.model.input.PessoaInput;
 import com.example.GraphQLRProject.util.CustomDateDeserializer;
 import com.example.GraphQLRProject.util.DateFormat;
 
@@ -178,10 +179,11 @@ public class Pessoa extends GenericEntity {
 
 	}
 	
-	public Pessoa(String nome, String cpf, String email) {
+	public Pessoa(String nome, String cpf, String email, Date dataNascimento) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.email = email;
+		this.dataNascimento = dataNascimento;
 		this.statusCadastro = true;
 	}
 
@@ -190,6 +192,14 @@ public class Pessoa extends GenericEntity {
 		this.email = (@NotNull(message = "E-mail vazio.") @Email String) pessoa.get("email");
 		this.cpf = (@NotNull(message = "CPF da Pessoa vazio.") String) pessoa.get("cpf");
 		this.statusCadastro = true;
-
+	}
+	
+	public Pessoa updateEntity(PessoaInput novo) {		
+		this.nome = novo.getNome();
+		this.cpf = novo.getCpf();
+		this.email = novo.getEmail();
+		this.dataNascimento = novo.getDataNascimento();
+		
+		return this;
 	}
 }

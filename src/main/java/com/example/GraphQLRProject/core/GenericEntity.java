@@ -11,6 +11,7 @@ import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.annotations.Where;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -19,6 +20,7 @@ import com.example.GraphQLRProject.util.DateHelper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @MappedSuperclass
+@Where(clause = "ativo = true")
 public abstract class GenericEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;

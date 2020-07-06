@@ -10,6 +10,8 @@ type Query {
 
 type Mutation {
 	savePessoa(novo: PessoaInput): Pessoa
+	editPessoa(obj: PessoaInput): Pessoa
+	deletePessoa(id: Int!): Pessoa
 }
 
 type Pessoa {
@@ -24,6 +26,7 @@ input PessoaInput{
 	nome: String!
 	cpf: String!
 	email: String!
+	dataNascimento: Date
 }
 
 scalar Date

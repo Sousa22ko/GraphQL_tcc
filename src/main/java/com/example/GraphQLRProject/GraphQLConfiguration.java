@@ -9,10 +9,19 @@ import graphql.schema.GraphQLScalarType;
 
 @Configuration
 public class GraphQLConfiguration {
-	
+
 	@Bean
 	public GraphQLScalarType jsonType() {
-        return DateScalar.DATE;
-    }
+		return DateScalar.DATE;
+	}
+
+//	@Bean
+//	protected List<GraphQLError> filterGraphQLErrors(List<GraphQLError> errors) {
+//		return errors.stream().filter(e -> e instanceof ExceptionWhileDataFetching)
+//				.map(e -> e instanceof ExceptionWhileDataFetching
+//						? new FetchingException((ExceptionWhileDataFetching) e)
+//						: e)
+//				.collect(Collectors.toList());
+//	}
 
 }
