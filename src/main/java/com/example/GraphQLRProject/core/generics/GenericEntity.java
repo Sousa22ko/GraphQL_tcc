@@ -1,4 +1,4 @@
-package com.example.GraphQLRProject.core;
+package com.example.GraphQLRProject.core.generics;
 
 import java.io.Serializable;
 import java.util.Date;

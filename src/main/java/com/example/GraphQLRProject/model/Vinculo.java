@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.annotations.Where;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import com.example.GraphQLRProject.core.GenericEntity;
+import com.example.GraphQLRProject.core.generics.GenericEntity;
 import com.example.GraphQLRProject.util.CustomDateDeserializer;
 import com.example.GraphQLRProject.util.DateFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;

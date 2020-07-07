@@ -1,4 +1,4 @@
-package com.example.GraphQLRProject.core;
+package com.example.GraphQLRProject.core.exceptions;
 
 public class FetchingException {// extends ExceptionWhileDataFetching {
 

@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-import com.example.GraphQLRProject.core.GenericEntity;
+import com.example.GraphQLRProject.core.generics.GenericEntity;
 
 @Entity
 @Table(name = "endereco")

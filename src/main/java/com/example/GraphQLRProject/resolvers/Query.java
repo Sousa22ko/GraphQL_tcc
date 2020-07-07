@@ -1,4 +1,4 @@
-package com.example.GraphQLRProject.core;
+package com.example.GraphQLRProject.resolvers;
 
 import java.util.List;
 
@@ -8,19 +8,19 @@ import org.springframework.stereotype.Component;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.example.GraphQLRProject.model.Pessoa;
-import com.example.GraphQLRProject.repository.PessoaRepository;
+import com.example.GraphQLRProject.service.PessoaService;
 
 @Component
 public class Query implements GraphQLQueryResolver {
 
 	@Resource
-	private PessoaRepository pessoaRepository;
+	private PessoaService pessoaService;
 
 	public List<Pessoa> findAllPessoas() {
-		return pessoaRepository.findAll();
+		return pessoaService.findAll();
 	}
 
 	public Pessoa findPessoaById(Integer id) {
-		return pessoaRepository.findById(id).get();
+		return pessoaService.findById(id);
 	}
 }

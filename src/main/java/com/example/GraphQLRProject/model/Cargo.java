@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Where;
 
-import com.example.GraphQLRProject.core.GenericEntity;
+import com.example.GraphQLRProject.core.generics.GenericEntity;
 
 @Entity
 @Table(name = "cargo")

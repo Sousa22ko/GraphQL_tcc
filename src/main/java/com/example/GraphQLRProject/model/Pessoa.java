@@ -19,8 +19,7 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-
-import com.example.GraphQLRProject.core.GenericEntity;
+import com.example.GraphQLRProject.core.generics.GenericEntity;
 import com.example.GraphQLRProject.model.input.PessoaInput;
 import com.example.GraphQLRProject.util.CustomDateDeserializer;
 import com.example.GraphQLRProject.util.DateFormat;

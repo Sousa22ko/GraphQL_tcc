@@ -13,22 +13,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 
-/**
- * <h2>Deserializador de datas customizados</h2>
- * <p>
- * O deserializador customizado deserializa strings em datas seguindo
- * determinados formatos pré-definidos. Sendo eles:
- * </p>
- * 
- * <ul>
- * <li>dd-MM-yyyy</li>
- * <li>dd/MM/yyyy</li>
- * <li>MMM dd, yyyy, HH:mm:ss a</li>
- * </ul>
- * <br/>
- * 
- * @author Lucas Simonetti
- */
+
 @Component
 public class CustomDateDeserializer extends StdDeserializer<Date> {
 

@@ -1,6 +1,6 @@
 package com.example.GraphQLRProject.model.constant;
 
-import com.example.GraphQLRProject.core.GenericConstant;
+import com.example.GraphQLRProject.core.generics.GenericConstant;
 
 public class TipoSetor extends GenericConstant{
 	

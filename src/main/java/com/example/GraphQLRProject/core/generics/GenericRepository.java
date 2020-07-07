@@ -1,4 +1,4 @@
-package com.example.GraphQLRProject.core;
+package com.example.GraphQLRProject.core.generics;
 
 import java.util.List;
 import java.util.Optional;

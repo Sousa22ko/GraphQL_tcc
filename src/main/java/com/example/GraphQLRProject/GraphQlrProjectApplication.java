@@ -24,14 +24,4 @@ public class GraphQlrProjectApplication {
 	void started() {
 		TimeZone.setDefault(TimeZone.getTimeZone("America/Recife"));
 	}
-
-//	@Bean
-//	public ServletRegistrationBean graphQLServlet() {
-//		return new ServletRegistrationBean(SimpleGraphQLHttpServlet.newBuilder(buildSchema()).build(), "/graphql");
-//	}
-//
-//	private static GraphQLSchema buildSchema() {
-//		return SchemaParser.newParser().file("schema.graphqls").resolvers(new Query(), new Mutation())
-//				.scalars(DateScalar.DATE).build().makeExecutableSchema();
-//	}
 }

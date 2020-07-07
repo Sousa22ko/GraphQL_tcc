@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import com.example.GraphQLRProject.core.GenericEntity;
+import com.example.GraphQLRProject.core.generics.GenericEntity;
 import com.example.GraphQLRProject.model.constant.TipoSetor;
 
 @Entity

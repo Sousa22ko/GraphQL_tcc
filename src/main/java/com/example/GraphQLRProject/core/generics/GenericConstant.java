@@ -1,4 +1,4 @@
-package com.example.GraphQLRProject.core;
+package com.example.GraphQLRProject.core.generics;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
