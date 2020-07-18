@@ -51,7 +51,7 @@ public class Usuario extends GenericEntity implements UserDetails {
 	 * usuário no sistema
 	 */
 	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name = "permissao", schema = "public", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_papel"))
+	@JoinTable(name = "permissao", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_papel"))
 	private Set<Papel> permissoes;
 	
 	

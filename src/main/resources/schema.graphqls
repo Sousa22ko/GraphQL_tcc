@@ -6,6 +6,8 @@ schema {
 type Query {
 	findAllPessoas: [Pessoa]
 	findPessoaById(id: Int!): Pessoa
+	findAllSetores: [Setor]
+	findSetorById(id: Int!): Setor
 }
 
 type Mutation {
@@ -20,9 +22,29 @@ type Pessoa {
 	cpf: String!
 	email: String!
 	dataNascimento: Date
+	vinculos:[Vinculo]
+	vinculoAtivo: Vinculo
 }
 
-input PessoaInput{
+type Setor {
+	id: ID!
+	codigo: String
+	denominacao: String
+	sigla: String
+	superSetor: Setor
+	tipoSetor: String
+}
+
+type Vinculo {
+	id: ID!
+	statusVinculo: Boolean!
+	tipoVinculo: String
+	matricula: String
+	setor: Setor
+	jornadaSemanal: Int
+}
+
+input PessoaInput {
 	nome: String!
 	cpf: String!
 	email: String!

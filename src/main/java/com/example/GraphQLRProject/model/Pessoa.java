@@ -88,7 +88,7 @@ public class Pessoa extends GenericEntity {
 	/**
 	 * Referencia ao vinculo do colaborador
 	 */
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "id_pessoa")
 	private List<Vinculo> vinculos;
 

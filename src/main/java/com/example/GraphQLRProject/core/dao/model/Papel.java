@@ -22,7 +22,7 @@ import com.example.GraphQLRProject.core.security.enums.PapelResponsabilidade;
 import com.example.GraphQLRProject.model.Setor;
 
 @Entity
-@Table(name = "papel", schema = "public")
+@Table(name = "papel")
 @AttributeOverride(name = "id", column = @Column(name = "id_papel"))
 public class Papel extends GenericEntity implements GrantedAuthority {
 
